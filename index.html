@@ -9,6 +9,7 @@
     <title>selfo · 本地照片与视频整理工具</title>
     <link rel="icon" href="assets/selfo-icon.png">
     <link rel="stylesheet" href="assets/styles.css">
+    <link rel="stylesheet" href="assets/modern.css">
   </head>
   <body class="product-home">
     <a class="skip-link" href="#main">跳到主要内容</a>
@@ -30,9 +31,6 @@
 
     <main id="main">
       <section class="product-hero" id="top" aria-labelledby="hero-title">
-        <div class="product-hero-grid" aria-hidden="true"></div>
-        <div class="product-orbit product-orbit-one" aria-hidden="true"></div>
-        <div class="product-orbit product-orbit-two" aria-hidden="true"></div>
         <div class="shell product-hero-layout">
           <div class="product-hero-copy">
             <p class="eyebrow"><span class="eyebrow-line" aria-hidden="true"></span>为 iPhone 而生 · 本地照片与视频整理</p>
@@ -48,32 +46,24 @@
             <p class="hero-note"><span aria-hidden="true"></span>无需登录 · 核心分析在设备上完成 · 每次修改由你确认</p>
           </div>
 
-          <div class="phone-stage" role="img" aria-label="selfo 整理卡片界面示意：左滑跳过、上滑待收藏、右滑待删除">
-            <div class="phone-halo" aria-hidden="true"></div>
-            <div class="phone-frame">
-              <div class="phone-island" aria-hidden="true"></div>
-              <div class="phone-screen">
-                <div class="phone-topbar"><span>9:41</span><strong>selfo</strong><span>•••</span></div>
-                <div class="phone-title"><span>整理图片</span><small>最近项目 · 38 / 126</small></div>
-                <div class="phone-card-stack" aria-hidden="true">
-                  <div class="phone-card phone-card-back"></div>
-                  <div class="phone-card phone-card-front">
-                    <span class="photo-sun"></span>
-                    <span class="photo-ridge photo-ridge-one"></span>
-                    <span class="photo-ridge photo-ridge-two"></span>
-                    <span class="photo-date">8 月 15 日 · 上海</span>
-                  </div>
-                </div>
-                <div class="phone-queues"><span>☆ <b>待收藏</b></span><span>▾ <b>展开图库</b></span><span>⌫ <b>待删除</b></span></div>
-                <div class="phone-home-indicator" aria-hidden="true"></div>
+          <div class="product-visual" role="img" aria-label="selfo 整理动作示意：左滑跳过、上滑待收藏、右滑待删除，最终操作前先复核">
+            <div class="visual-bloom" aria-hidden="true"></div>
+            <div class="media-deck" aria-hidden="true">
+              <div class="media-card media-card-left"><span>←</span></div>
+              <div class="media-card media-card-right"><span>→</span></div>
+              <div class="media-card media-card-main">
+                <div class="media-art"><span></span><i></i><b></b></div>
+                <div class="media-card-meta"><span>整理卡片</span><small>照片与视频</small></div>
               </div>
             </div>
-            <div class="gesture-chip gesture-left"><span>←</span><strong>左滑</strong><small>跳过</small></div>
-            <div class="gesture-chip gesture-up"><span>↑</span><strong>上滑</strong><small>待收藏</small></div>
-            <div class="gesture-chip gesture-right"><span>→</span><strong>右滑</strong><small>待删除</small></div>
+            <div class="decision-rail" aria-hidden="true">
+              <div><span>←</span><p><strong>跳过</strong><small>不做修改</small></p></div>
+              <div><span>↑</span><p><strong>待收藏</strong><small>稍后复核</small></p></div>
+              <div><span>→</span><p><strong>待删除</strong><small>稍后复核</small></p></div>
+            </div>
+            <div class="review-pill" aria-hidden="true"><span>✓</span><p><strong>先复核，再确认</strong><small>图库不会被自动修改</small></p></div>
           </div>
         </div>
-        <div class="shell hero-index" aria-hidden="true"><strong>01</strong><span></span><small>CALM PHOTO REVIEW</small></div>
       </section>
 
       <section class="trust-ribbon" aria-label="selfo 的三项基本承诺">
