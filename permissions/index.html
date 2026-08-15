@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh-Hans-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="selfo 权限与个人信息清单：照片读写访问、媒体元数据、本地整理记录、StoreKit 权益和支持沟通。">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <title>权限与个人信息清单 · selfo</title>
+    <link rel="icon" href="../assets/selfo-icon.png">
+    <link rel="stylesheet" href="../assets/styles.css">
+  </head>
+  <body>
+    <a class="skip-link" href="#content">跳到权限清单正文</a>
+    <header class="site-header"><div class="header-inner"><a class="brand" href="../" aria-label="selfo 官网首页"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><nav class="nav" aria-label="主导航"><a class="nav-product" href="../#features">功能</a><a href="../guide/">使用指南</a><a class="nav-secondary" href="../privacy/">隐私</a><a class="nav-secondary" href="../support/">支持</a><a class="language-link" href="../en/permissions/" lang="en">EN</a></nav></div></header>
+    <main>
+      <header class="document-hero"><div class="shell"><p class="eyebrow">Permissions &amp; Data List</p><h1>权限与个人信息清单</h1><p class="document-summary">按功能列出 selfo 当前请求的系统权限、在设备上处理的信息，以及你拒绝或撤回后的影响。</p><div class="document-meta"><span>生效及更新日期：2026 年 8 月 15 日</span><span>适用于 selfo 1.0</span></div></div></header>
+      <div class="shell document-layout">
+        <aside class="toc" aria-label="本页目录"><p class="toc-title">目录</p><a href="#permission">系统权限</a><a href="#data">信息清单</a><a href="#not-requested">不申请的权限</a><a href="#control">如何控制</a><a href="#technical">技术性本地访问</a></aside>
+        <article class="legal-content" id="content">
+          <section id="permission">
+            <h2>1. 系统权限</h2>
+            <div class="table-wrap"><table><thead><tr><th>权限</th><th>使用场景</th><th>能否拒绝</th><th>拒绝或限制后的影响</th></tr></thead><tbody><tr><td>照片读写访问<br><code>PhotoKit .readWrite</code></td><td>读取、预览、播放、扫描和分组媒体；创建及维护“selfo 收藏”；确认收藏与删除。</td><td>可以</td><td>核心整理需要“完全访问”。拒绝或只提供有限访问时，核心功能不可用；法律与订阅页面仍可查看。</td></tr></tbody></table></div>
+            <p>iOS 只显示一次照片读写授权，不是 selfo 分别申请“读取权限”和“写入权限”。selfo 会在真正需要时使用该授权范围内的系统能力。</p>
+          </section>
+          <section id="data">
+            <h2>2. 个人信息与数据清单</h2>
+            <div class="table-wrap"><table><thead><tr><th>类别</th><th>具体内容</th><th>目的</th><th>处理与保存</th></tr></thead><tbody>
+              <tr><td>媒体内容</td><td>授权范围内的照片、视频、截图、录屏、Live Photo</td><td>展示、播放、整理、相似分析、扫描和确认操作</td><td>核心处理在设备本地；不上传开发者控制的 selfo 服务器。原件仍在系统图库。</td></tr>
+              <tr><td>媒体基础信息</td><td>资源标识符、文件名、创建/修改时间、类型、尺寸、时长、文件大小、相册归属</td><td>排序、分组、统计、恢复进度、展示文件信息</td><td>设备本地；相关记录通常随 App 数据保留。</td></tr>
+              <tr><td>拍摄与 EXIF 信息</td><td>相机/镜头型号、光圈、曝光、ISO、焦距等媒体已有字段</td><td>在信息面板展示媒体详情</td><td>按需在设备上读取，不上传 selfo 服务器。</td></tr>
+              <tr><td>媒体内嵌位置</td><td>照片或视频文件已有的拍摄坐标</td><td>展示坐标、地点名称和地图预览</td><td>原始坐标属于系统媒体元数据；显示地点时可能传给 Apple Maps/MapKit，结果为临时缓存。</td></tr>
+              <tr><td>整理记录</td><td>待收藏、待删除、跳过、完成、当前进度、所选相册</td><td>继续整理、批量复核、避免重复处理</td><td>设备本地；撤销、清理或删除 App 前保留。</td></tr>
+              <tr><td>扫描与统计</td><td>相似组、截图/录屏、较大文件、颜色主题结果，以及日期、数量、估算空间等整理足迹</td><td>展示建议、待办和整理统计</td><td>设备本地的可重新生成缓存与统计；删除 App 或清理相关记录前保留。</td></tr>
+              <tr><td>设置与技术状态</td><td>语言、视频声音、界面状态、教学进度、启动和任务时序</td><td>保存偏好、维持页面状态、控制性能与动画</td><td>设备本地；不用于广告或跨 App 追踪。</td></tr>
+              <tr><td>订阅权益</td><td>产品标识符、权益状态、到期和交易状态、恢复结果</td><td>展示购买方案、解锁 Pro、恢复购买</td><td>StoreKit / App Store 与设备本地；付款记录由 Apple 管理。</td></tr>
+              <tr><td>支持沟通</td><td>邮箱、问题描述、附件，以及你主动提供的设备、系统和 App 信息</td><td>回复、排错、隐私请求和必要争议记录</td><td>经邮件服务处理；目的实现后删除或按必要期限保留。</td></tr>
+            </tbody></table></div>
+          </section>
+          <section id="not-requested"><h2>3. 当前不申请的权限</h2><p>selfo 当前不申请：</p><ul><li>设备定位或后台定位；</li><li>相机、麦克风；</li><li>通讯录、日历、提醒事项；</li><li>通知；</li><li>蓝牙、本地网络；</li><li>健康或运动数据；</li><li>广告标识符和 App Tracking Transparency 追踪权限。</li></ul><p>读取媒体文件中已有的拍摄坐标不等于申请设备定位权限。</p></section>
+          <section id="control"><h2>4. 如何控制这些信息</h2><ul><li>在 iOS 设置中调整或撤回 selfo 的照片访问；</li><li>在待处理页撤销尚未确认的收藏或删除标记；</li><li>从“selfo 收藏”移除相册成员关系而不删除原件；</li><li>在 Apple Photos 的“最近删除”中管理系统已删除媒体；</li><li>删除 selfo 以清除大部分 App 本地记录；</li><li>通过 Apple 账号管理订阅；</li><li>通过 <a href="mailto:yeertesi636@gmail.com?subject=selfo%20%E9%9A%90%E7%A7%81%E8%AF%B7%E6%B1%82">隐私邮箱</a>请求处理支持沟通信息。</li></ul></section>
+          <section id="technical"><h2>5. Required Reason API</h2><p>selfo 的 Apple 隐私清单声明不进行追踪、没有声明收集的数据类型。App 使用 UserDefaults 保存本地偏好，并读取系统启动时间用于时序或性能相关逻辑；这些访问按照 Apple 的 Required Reason API 规则声明，不用于识别、画像或跨 App 追踪用户。</p><p>更完整的处理规则见<a href="../privacy/">《隐私政策》</a>。</p></section>
+          <div class="document-actions"><a class="text-link" href="../privacy/">隐私政策</a><a class="text-link" href="../third-parties/">系统服务清单</a><a class="text-link" href="../en/permissions/" lang="en">Read in English</a></div>
+        </article>
+      </div>
+    </main>
+    <footer class="site-footer product-footer compact-product-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><p>为 iPhone 设计的本地照片与视频整理工具。</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div><nav class="footer-column" aria-label="产品"><strong>产品</strong><a href="../#features">功能</a><a href="../guide/">使用指南</a><a href="../subscription/">selfo Pro</a></nav><nav class="footer-column" aria-label="帮助"><strong>帮助</strong><a href="../support/">支持与 FAQ</a><a href="mailto:yeertesi636@gmail.com">联系支持</a></nav><nav class="footer-column" aria-label="透明度与法律"><strong>透明度与法律</strong><a href="../privacy/">隐私政策</a><a href="../terms/">用户协议</a><a href="../permissions/">权限清单</a><a href="../third-parties/">第三方服务</a><a href="../open-source/">开源许可</a></nav></div><div class="shell footer-bottom"><span>© 2026 selfo</span><span>为你的图库而设计。</span><a href="../en/permissions/" lang="en">English</a></div></footer>
+  </body>
+</html>
