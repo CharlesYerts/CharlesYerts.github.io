@@ -2226,7 +2226,7 @@ a:focus-visible {
 
 .document-hero .shell {
   position: relative;
-  min-height: 30rem;
+  min-height: 35rem;
   padding: clamp(5rem, 9vw, 8rem) min(42vw, 40rem) clamp(4.5rem, 8vw, 7rem) 0;
 }
 
@@ -2276,9 +2276,11 @@ a:focus-visible {
 .document-hero__mascot {
   position: absolute;
   z-index: 1;
-  right: -3rem;
-  bottom: -7rem;
-  width: min(40rem, 45vw);
+  top: 0.75rem;
+  right: -1.75rem;
+  bottom: auto;
+  width: min(34rem, 42vw);
+  height: auto;
   aspect-ratio: 1;
   object-fit: contain;
   filter: drop-shadow(0 2rem 2rem rgba(0, 0, 0, 0.3));
@@ -2675,7 +2677,7 @@ tr:last-child td {
 
   .document-hero .shell {
     min-height: 31rem;
-    padding: 4.5rem 0 12rem;
+    padding: 4.5rem 0 24rem;
   }
 
   .document-hero h1 {
@@ -2688,9 +2690,10 @@ tr:last-child td {
   }
 
   .document-hero__mascot {
+    top: auto;
     right: 50%;
-    bottom: -7.5rem;
-    width: 26rem;
+    bottom: 0;
+    width: min(22rem, calc(100vw - 2rem));
     max-width: none;
     transform: translateX(50%);
     opacity: 0.95;
