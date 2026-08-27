@@ -65,18 +65,18 @@ body {
 }
 
 .brand {
-  gap: 10px;
+  gap: 0;
   font-size: 1.08rem;
   font-weight: 720;
   letter-spacing: -0.03em;
 }
 
 .brand-mark {
-  width: 36px;
+  width: 98px;
   height: 36px;
   border: 0;
-  border-radius: 11px;
-  box-shadow: 0 12px 30px rgba(169, 29, 58, 0.22);
+  border-radius: 0;
+  box-shadow: none;
 }
 
 .nav {
@@ -227,6 +227,21 @@ body {
   width: min(100%, 530px);
   min-height: 580px;
   margin-inline: auto;
+}
+
+.preview-hero-mascot {
+  position: absolute;
+  z-index: 4;
+  right: -5%;
+  bottom: 4%;
+  width: min(112%, 590px);
+  height: auto;
+  filter: drop-shadow(0 36px 54px rgba(0, 0, 0, 0.34));
+}
+
+.preview-hero-mascot + .media-deck {
+  opacity: 0.18;
+  transform: translateX(-50%) scale(1.05);
 }
 
 .visual-bloom {
@@ -1117,18 +1132,13 @@ td {
   }
 
   .brand {
-    gap: 8px;
+    gap: 0;
     font-size: 1rem;
   }
 
   .brand-mark {
-    width: 34px;
+    width: 92px;
     height: 34px;
-    border-radius: 10px;
-  }
-
-  .brand > span:last-child {
-    display: inline;
   }
 
   .nav {

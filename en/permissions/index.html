@@ -1,32 +1,64 @@
-<!DOCTYPE html>
-<html lang="en-US">
+<!doctype html>
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="selfo permissions and data list covering Photos access, media metadata, local organization records, StoreKit entitlements, and support communications.">
+    <meta name="application-name" content="selfo">
+    <meta name="theme-color" content="#151515">
+    <meta name="color-scheme" content="dark light">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
     <title>Permissions &amp; Data List · selfo</title>
-    <link rel="icon" href="../../assets/selfo-icon.png">
-    <link rel="stylesheet" href="../../assets/styles.css">
-    <link rel="stylesheet" href="../../assets/modern.css">
+    <link rel="canonical" href="https://charlesyerts.github.io/en/permissions/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://charlesyerts.github.io/permissions/">
+    <link rel="alternate" hreflang="en" href="https://charlesyerts.github.io/en/permissions/">
+    <link rel="alternate" hreflang="x-default" href="https://charlesyerts.github.io/permissions/">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="/assets/site.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="selfo">
+    <meta property="og:title" content="Permissions &amp; Data List · selfo">
+    <meta property="og:description" content="selfo permissions and data list covering Photos access, media metadata, local organization records, StoreKit entitlements, and support communications.">
+    <meta property="og:url" content="https://charlesyerts.github.io/en/permissions/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:image" content="https://charlesyerts.github.io/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="selfo official website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Permissions &amp; Data List · selfo">
+    <meta name="twitter:description" content="selfo permissions and data list covering Photos access, media metadata, local organization records, StoreKit entitlements, and support communications.">
+    <meta name="twitter:image" content="https://charlesyerts.github.io/assets/og.png">
   </head>
-  <body>
-    <a class="skip-link" href="#content">Skip to permissions and data</a>
-    <header class="site-header"><div class="header-inner"><a class="brand" href="../" aria-label="selfo official site home"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><nav class="nav" aria-label="Main navigation"><a class="nav-product" href="../#features">Features</a><a href="../guide/">Guide</a><a class="nav-secondary" href="../privacy/">Privacy</a><a class="nav-secondary" href="../support/">Support</a><a class="language-link" href="../../permissions/" lang="zh-Hans">中</a></nav></div></header>
+  <body class="document-site route-permissions">
+    <a class="skip-link" href="#content">Skip to the main content</a>
+    <header class="site-header">
+      <a class="brand-link" href="/en/" aria-label="selfo official site home"><span class="brand"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="/en/#organizer">Organize</a><a href="/en/guide/">App guide</a><a href="/en/privacy/">Privacy</a><a href="/en/support/">Support</a></nav>
+      <div class="header-actions"><a class="header-download" href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">Download<span aria-hidden="true">↗</span></a><div class="language-toggle" role="group" aria-label="Language / 语言"><a href="/permissions/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a class="is-active" aria-current="page" href="/en/permissions/" lang="en">EN</a></div></div>
+    </header>
     <main>
-      <header class="document-hero"><div class="shell"><p class="eyebrow">Permissions &amp; Data List</p><h1>Permissions &amp; Data List</h1><p class="document-summary">A feature-by-feature list of system permission requested by selfo, information processed on device, and the effect of refusing or withdrawing access.</p><div class="document-meta"><span>Effective and last updated: August 15, 2026</span><span>Applies to selfo 1.0</span></div></div></header>
+      <header class="document-hero route-permissions-hero"><div class="shell"><p class="eyebrow">Permissions &amp; Data List</p><h1>Permissions &amp; Data List</h1><p class="document-summary">A feature-by-feature list of system permission requested by selfo, information processed on device, and the effect of refusing or withdrawing access.</p><div class="document-meta"><span>Effective and last updated: August 27, 2026</span><span>Applies to selfo 1.2</span></div>
+        <img class="document-hero__mascot" src="/assets/selfo-ip-permission.webp" width="1000" height="1000" alt="" fetchpriority="high">
+        </div></header>
       <div class="shell document-layout">
         <aside class="toc" aria-label="On this page"><p class="toc-title">Contents</p><a href="#permission">System permission</a><a href="#data">Data list</a><a href="#not-requested">Not requested</a><a href="#control">Your controls</a><a href="#technical">Technical local access</a></aside>
         <article class="legal-content" id="content">
-          <section id="permission"><h2>1. System permission</h2><div class="table-wrap"><table><thead><tr><th>Permission</th><th>Use</th><th>Optional?</th><th>Effect of refusal or limitation</th></tr></thead><tbody><tr><td>Read-and-write Photos access<br><code>PhotoKit .readWrite</code></td><td>Read, preview, play, scan, and group media; create and maintain “selfo 收藏”; confirm favorites and deletion.</td><td>Yes</td><td>Core organization requires Full Access. If denied or limited, core features are unavailable; legal and subscription information remains viewable.</td></tr></tbody></table></div><p>iOS presents a single read-and-write Photos authorization. selfo does not request separate “read” and “write” permissions and uses only system capabilities within the authorized scope when needed.</p></section>
+          <section id="permission"><h2>1. System permission</h2><p>On first launch, selfo shows the Privacy Policy and Terms of Use. selfo requests read-and-write Photos access only after you tap “Agree and Continue”; tapping “Not Now” does not request Photos access.</p><div class="table-wrap"><table><thead><tr><th>Permission</th><th>Use</th><th>Optional?</th><th>Effect of refusal or limitation</th></tr></thead><tbody><tr><td>Read-and-write Photos access<br><code>PhotoKit .readWrite</code></td><td>Read, preview, play, scan, and group media; create and maintain “selfo 收藏”; confirm favorites and deletion.</td><td>Yes</td><td>Core organization requires Full Access. If denied or limited, core features are unavailable; legal and subscription information remains viewable.</td></tr></tbody></table></div><p>iOS presents a single read-and-write Photos authorization. selfo does not request separate “read” and “write” permissions and uses only system capabilities within the authorized scope when needed.</p></section>
           <section id="data"><h2>2. Personal information and data list</h2><div class="table-wrap"><table><thead><tr><th>Category</th><th>Details</th><th>Purpose</th><th>Processing and retention</th></tr></thead><tbody>
             <tr><td>Media content</td><td>Authorized photos, videos, screenshots, screen recordings, and Live Photos</td><td>Display, play, organize, compare, scan, and confirm actions</td><td>Core processing on device; not uploaded to a developer-controlled selfo server. Originals remain in the system library.</td></tr>
             <tr><td>Basic media data</td><td>Asset identifier, filename, dates, type, dimensions, duration, file size, and album membership</td><td>Sort, group, show details and statistics, and resume progress</td><td>On device; related records ordinarily remain with app data.</td></tr>
             <tr><td>Capture and EXIF data</td><td>Existing camera/lens model, aperture, exposure, ISO, focal length, and similar fields</td><td>Display media details</td><td>Read on device as needed; not uploaded to a selfo server.</td></tr>
-            <tr><td>Embedded location</td><td>Capture coordinates already stored in a photo or video</td><td>Show coordinates, a place name, and map preview</td><td>Original coordinates remain system media metadata; may be sent to Apple Maps/MapKit for display; resolved results are temporary cache.</td></tr>
+            <tr><td>Embedded location</td><td>Coordinates already embedded in a photo or video</td><td>Show coordinates, a place name, and map preview; open the media location in Apple Maps when you actively choose to do so</td><td>Original coordinates remain system media metadata and may be passed through MapKit to Apple Maps for display or opening the map; resolved details and previews are temporary cache.</td></tr>
             <tr><td>Organization records</td><td>Pending favorites, pending deletion, skipped/completed items, current progress, and selected albums</td><td>Resume, batch review, and avoid duplicate handling</td><td>On device until undone, cleared, or the app is deleted.</td></tr>
-            <tr><td>Scans and statistics</td><td>Similar groups, captures, large files, color themes, and organization history such as dates, counts, and estimated space</td><td>Provide suggestions, queues, and statistics</td><td>On-device regenerable caches and statistics until relevant records or app data are cleared.</td></tr>
+            <tr><td>Daily free allowance</td><td>Media identifier or deduplication digest, media type, current-day pending reservations and used state, and local calendar day reference</td><td>Deduplicate, reserve, release, and automatically reset the daily allowance of 20 photos and 10 videos</td><td>On device; used state resets at a local-day boundary. A previous-day pending item remains until withdrawn or confirmed and does not use the new day's allowance.</td></tr>
+            <tr><td>Scans and statistics</td><td>Similar groups, screenshots and screen recordings, large files, color themes, and organization history such as dates, counts, and estimated space</td><td>Provide suggestions, queues, and statistics</td><td>On-device regenerable caches and statistics until relevant records or app data are cleared.</td></tr>
             <tr><td>Settings and technical state</td><td>Language, video sound, interface state, teaching progress, startup and task timing</td><td>Save preferences, preserve interface state, and manage performance or animation</td><td>On device; not used for advertising or cross-app tracking.</td></tr>
             <tr><td>Subscription entitlement</td><td>Product ID, entitlement status, expiration and transaction state, restore result</td><td>Show plans, unlock Pro, and restore purchases</td><td>StoreKit / App Store and on device; Apple controls billing records.</td></tr>
             <tr><td>Support communication</td><td>Email address, description, attachments, and device, system, or app details you choose to provide</td><td>Respond, troubleshoot, handle privacy requests, and retain necessary dispute records</td><td>Processed through email; deleted when the purpose is complete or retained only as necessary.</td></tr>
@@ -38,6 +70,14 @@
         </article>
       </div>
     </main>
-    <footer class="site-footer product-footer compact-product-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><p>A local photo and video organizer made for iPhone.</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div><nav class="footer-column" aria-label="Product"><strong>Product</strong><a href="../#features">Features</a><a href="../guide/">App Guide</a><a href="../subscription/">selfo Pro</a></nav><nav class="footer-column" aria-label="Help"><strong>Help</strong><a href="../support/">Support &amp; FAQ</a><a href="mailto:yeertesi636@gmail.com">Contact Support</a></nav><nav class="footer-column" aria-label="Transparency and legal"><strong>Transparency &amp; Legal</strong><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a><a href="../permissions/">Permissions</a><a href="../third-parties/">Third Parties</a><a href="../open-source/">Open Source</a></nav></div><div class="shell footer-bottom"><span>© 2026 selfo</span><span>Made for your library.</span><a href="../../permissions/" lang="zh-Hans">简体中文</a></div></footer>
+    <footer class="site-footer">
+      <div class="site-footer__brand"><span class="brand brand--compact"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span><p>A local photo and video organizer made for iPhone.</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <div><strong>Product</strong><a href="/en/#organizer">Organize</a><a href="/en/#features">Features</a><a href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">App Store</a></div>
+        <div><strong>Help</strong><a href="/en/guide/">App guide</a><a href="/en/support/">Support & FAQ</a></div>
+        <div><strong>Transparency & legal</strong><a href="/en/privacy/">Privacy Policy</a><a href="/en/terms/">Terms of Use</a><a href="/en/subscription/">Subscription</a></div>
+      </nav>
+      <div class="site-footer__bottom"><span>© 2026 selfo · Made for your library.</span><div class="language-toggle" role="group" aria-label="Language / 语言"><a href="/permissions/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a class="is-active" aria-current="page" href="/en/permissions/" lang="en">EN</a></div></div>
+    </footer>
   </body>
 </html>

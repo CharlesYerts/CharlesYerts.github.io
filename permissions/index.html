@@ -1,26 +1,58 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="zh-Hans-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="selfo 权限与个人信息清单：照片读写访问、媒体元数据、本地整理记录、StoreKit 权益和支持沟通。">
+    <meta name="application-name" content="selfo">
+    <meta name="theme-color" content="#151515">
+    <meta name="color-scheme" content="dark light">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
     <title>权限与个人信息清单 · selfo</title>
-    <link rel="icon" href="../assets/selfo-icon.png">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="stylesheet" href="../assets/modern.css">
+    <link rel="canonical" href="https://charlesyerts.github.io/permissions/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://charlesyerts.github.io/permissions/">
+    <link rel="alternate" hreflang="en" href="https://charlesyerts.github.io/en/permissions/">
+    <link rel="alternate" hreflang="x-default" href="https://charlesyerts.github.io/permissions/">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="/assets/site.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="selfo">
+    <meta property="og:title" content="权限与个人信息清单 · selfo">
+    <meta property="og:description" content="selfo 权限与个人信息清单：照片读写访问、媒体元数据、本地整理记录、StoreKit 权益和支持沟通。">
+    <meta property="og:url" content="https://charlesyerts.github.io/permissions/">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://charlesyerts.github.io/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="selfo 官方网站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="权限与个人信息清单 · selfo">
+    <meta name="twitter:description" content="selfo 权限与个人信息清单：照片读写访问、媒体元数据、本地整理记录、StoreKit 权益和支持沟通。">
+    <meta name="twitter:image" content="https://charlesyerts.github.io/assets/og.png">
   </head>
-  <body>
-    <a class="skip-link" href="#content">跳到权限清单正文</a>
-    <header class="site-header"><div class="header-inner"><a class="brand" href="../" aria-label="selfo 官网首页"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><nav class="nav" aria-label="主导航"><a class="nav-product" href="../#features">功能</a><a href="../guide/">使用指南</a><a class="nav-secondary" href="../privacy/">隐私</a><a class="nav-secondary" href="../support/">支持</a><a class="language-link" href="../en/permissions/" lang="en">EN</a></nav></div></header>
+  <body class="document-site route-permissions">
+    <a class="skip-link" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand-link" href="/" aria-label="selfo 官网首页"><span class="brand"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span></a>
+      <nav class="desktop-nav" aria-label="主导航"><a href="/#organizer">整理方式</a><a href="/guide/">使用指南</a><a href="/privacy/">隐私</a><a href="/support/">支持</a></nav>
+      <div class="header-actions"><a class="header-download" href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">下载<span aria-hidden="true">↗</span></a><div class="language-toggle" role="group" aria-label="Language / 语言"><a class="is-active" aria-current="page" href="/permissions/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a href="/en/permissions/" lang="en">EN</a></div></div>
+    </header>
     <main>
-      <header class="document-hero"><div class="shell"><p class="eyebrow">Permissions &amp; Data List</p><h1>权限与个人信息清单</h1><p class="document-summary">按功能列出 selfo 当前请求的系统权限、在设备上处理的信息，以及你拒绝或撤回后的影响。</p><div class="document-meta"><span>生效及更新日期：2026 年 8 月 15 日</span><span>适用于 selfo 1.0</span></div></div></header>
+      <header class="document-hero route-permissions-hero"><div class="shell"><p class="eyebrow">Permissions &amp; Data List</p><h1>权限与个人信息清单</h1><p class="document-summary">按功能列出 selfo 当前请求的系统权限、在设备上处理的信息，以及你拒绝或撤回后的影响。</p><div class="document-meta"><span>生效及更新日期：2026 年 8 月 27 日</span><span>适用于 selfo 1.2</span></div>
+        <img class="document-hero__mascot" src="/assets/selfo-ip-permission.webp" width="1000" height="1000" alt="" fetchpriority="high">
+        </div></header>
       <div class="shell document-layout">
         <aside class="toc" aria-label="本页目录"><p class="toc-title">目录</p><a href="#permission">系统权限</a><a href="#data">信息清单</a><a href="#not-requested">不申请的权限</a><a href="#control">如何控制</a><a href="#technical">技术性本地访问</a></aside>
         <article class="legal-content" id="content">
           <section id="permission">
             <h2>1. 系统权限</h2>
+            <p>首次启动时，selfo 会先展示《隐私政策》和《用户协议》。只有你点按“同意并继续”后，selfo 才会请求照片读写权限；点按“暂不”不会发起照片权限请求。</p>
             <div class="table-wrap"><table><thead><tr><th>权限</th><th>使用场景</th><th>能否拒绝</th><th>拒绝或限制后的影响</th></tr></thead><tbody><tr><td>照片读写访问<br><code>PhotoKit .readWrite</code></td><td>读取、预览、播放、扫描和分组媒体；创建及维护“selfo 收藏”；确认收藏与删除。</td><td>可以</td><td>核心整理需要“完全访问”。拒绝或只提供有限访问时，核心功能不可用；法律与订阅页面仍可查看。</td></tr></tbody></table></div>
             <p>iOS 只显示一次照片读写授权，不是 selfo 分别申请“读取权限”和“写入权限”。selfo 会在真正需要时使用该授权范围内的系统能力。</p>
           </section>
@@ -30,8 +62,9 @@
               <tr><td>媒体内容</td><td>授权范围内的照片、视频、截图、录屏、Live Photo</td><td>展示、播放、整理、相似分析、扫描和确认操作</td><td>核心处理在设备本地；不上传开发者控制的 selfo 服务器。原件仍在系统图库。</td></tr>
               <tr><td>媒体基础信息</td><td>资源标识符、文件名、创建/修改时间、类型、尺寸、时长、文件大小、相册归属</td><td>排序、分组、统计、恢复进度、展示文件信息</td><td>设备本地；相关记录通常随 App 数据保留。</td></tr>
               <tr><td>拍摄与 EXIF 信息</td><td>相机/镜头型号、光圈、曝光、ISO、焦距等媒体已有字段</td><td>在信息面板展示媒体详情</td><td>按需在设备上读取，不上传 selfo 服务器。</td></tr>
-              <tr><td>媒体内嵌位置</td><td>照片或视频文件已有的拍摄坐标</td><td>展示坐标、地点名称和地图预览</td><td>原始坐标属于系统媒体元数据；显示地点时可能传给 Apple Maps/MapKit，结果为临时缓存。</td></tr>
+              <tr><td>媒体内嵌位置</td><td>照片或视频文件已有的拍摄坐标</td><td>展示坐标、地点名称和地图预览；在你主动操作时用 Apple 地图打开媒体位置</td><td>原始坐标属于系统媒体元数据；显示地点或打开地图时可能通过 MapKit 交给 Apple Maps，解析和预览结果为临时缓存。</td></tr>
               <tr><td>整理记录</td><td>待收藏、待删除、跳过、完成、当前进度、所选相册</td><td>继续整理、批量复核、避免重复处理</td><td>设备本地；撤销、清理或删除 App 前保留。</td></tr>
+              <tr><td>每日免费额度</td><td>媒体资源标识符或去重摘要、媒体类型、当日待确认预占和已使用状态、本地自然日基准</td><td>按照片 20 张、视频 10 个的每日额度去重、预占、释放和自动重置</td><td>设备本地；当日已使用状态在本地自然日切换时重置。前一日未确认项目保留到撤回或确认，且不占新一天额度。</td></tr>
               <tr><td>扫描与统计</td><td>相似组、截图/录屏、较大文件、颜色主题结果，以及日期、数量、估算空间等整理足迹</td><td>展示建议、待办和整理统计</td><td>设备本地的可重新生成缓存与统计；删除 App 或清理相关记录前保留。</td></tr>
               <tr><td>设置与技术状态</td><td>语言、视频声音、界面状态、教学进度、启动和任务时序</td><td>保存偏好、维持页面状态、控制性能与动画</td><td>设备本地；不用于广告或跨 App 追踪。</td></tr>
               <tr><td>订阅权益</td><td>产品标识符、权益状态、到期和交易状态、恢复结果</td><td>展示购买方案、解锁 Pro、恢复购买</td><td>StoreKit / App Store 与设备本地；付款记录由 Apple 管理。</td></tr>
@@ -45,6 +78,14 @@
         </article>
       </div>
     </main>
-    <footer class="site-footer product-footer compact-product-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><p>为 iPhone 设计的本地照片与视频整理工具。</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div><nav class="footer-column" aria-label="产品"><strong>产品</strong><a href="../#features">功能</a><a href="../guide/">使用指南</a><a href="../subscription/">selfo Pro</a></nav><nav class="footer-column" aria-label="帮助"><strong>帮助</strong><a href="../support/">支持与 FAQ</a><a href="mailto:yeertesi636@gmail.com">联系支持</a></nav><nav class="footer-column" aria-label="透明度与法律"><strong>透明度与法律</strong><a href="../privacy/">隐私政策</a><a href="../terms/">用户协议</a><a href="../permissions/">权限清单</a><a href="../third-parties/">第三方服务</a><a href="../open-source/">开源许可</a></nav></div><div class="shell footer-bottom"><span>© 2026 selfo</span><span>为你的图库而设计。</span><a href="../en/permissions/" lang="en">English</a></div></footer>
+    <footer class="site-footer">
+      <div class="site-footer__brand"><span class="brand brand--compact"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span><p>为 iPhone 设计的本地照片与视频整理工具。</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div>
+      <nav class="site-footer__nav" aria-label="页脚导航">
+        <div><strong>产品</strong><a href="/#organizer">整理方式</a><a href="/#features">功能</a><a href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">App Store</a></div>
+        <div><strong>帮助</strong><a href="/guide/">App 使用指南</a><a href="/support/">支持与常见问题</a></div>
+        <div><strong>透明度与法律</strong><a href="/privacy/">隐私政策</a><a href="/terms/">用户协议</a><a href="/subscription/">订阅说明</a></div>
+      </nav>
+      <div class="site-footer__bottom"><span>© 2026 selfo · 为你的图库而设计。</span><div class="language-toggle" role="group" aria-label="Language / 语言"><a class="is-active" aria-current="page" href="/permissions/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a href="/en/permissions/" lang="en">EN</a></div></div>
+    </footer>
   </body>
 </html>

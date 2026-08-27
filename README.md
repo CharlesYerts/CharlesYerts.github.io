@@ -13,10 +13,11 @@
 - 第三方与系统服务清单；
 - DGCharts 开源声明与完整 Apache License 2.0 文本；
 - 每个页面均有简体中文与 English 稳定路径。
+- 使用最新 selfo 字标、App 图标、松鼠 IP 资产、社交分享图与品牌化 404 页面。
 
 公开联系邮箱：`yeertesi636@gmail.com`
 
-页面内容按 selfo 1.0 当前实现整理。营销页面只使用 selfo 品牌；法定主体信息仅在中国大陆规则或合同识别确有必要的位置做最小披露，不在普通导航、支持页与全局页脚重复展示。
+页面内容按 selfo 1.2 当前实现整理。营销页面只使用 selfo 品牌；法定主体信息仅在中国大陆规则或合同识别确有必要的位置做最小披露，不在普通导航、支持页与全局页脚重复展示。
 
 > 本站内容不构成律师意见。正式商用前应由熟悉中国大陆和美国相关法律的专业人士复核。
 
@@ -25,7 +26,7 @@
 官网发布仓库：
 
 ```text
-CharlesYerts/charlesyerts.github.io
+CharlesYerts/CharlesYerts.github.io
 ```
 
 正式站点地址：
@@ -34,25 +35,23 @@ CharlesYerts/charlesyerts.github.io
 https://charlesyerts.github.io/
 ```
 
-当前本地文件夹仍名为 `selfo-legal-site`，不影响发布。站内链接和资源全部使用相对路径，已适配 GitHub Pages 根站点。
+当前本地文件夹仍名为 `selfo-legal-site`，不影响发布。站内链接和资源使用站点根路径，适配现有 GitHub Pages 用户站点。
 
 ## 发布到 GitHub Pages
 
-1. 新建公开用户站点仓库 `charlesyerts.github.io`，不要自动生成 README 或其他文件。
-2. 将本文件夹中的全部内容提交到仓库 `main` 分支。
-3. 打开 **Settings → Pages**。
-4. 在 **Build and deployment** 中选择：
+1. 在现有 `CharlesYerts/CharlesYerts.github.io` 仓库的 `main` 分支提交并推送本文件夹的全部内容。
+2. 打开 **Settings → Pages**，确认 **Build and deployment** 仍为：
    - Source：`Deploy from a branch`
    - Branch：`main`
    - Folder：`/(root)`
-5. 保存并等待 GitHub Pages 发布。
-6. 用桌面和手机分别检查首页以及下面列出的深层链接。
+3. 等待 GitHub Pages 自动发布。
+4. 用桌面和手机分别检查首页以及下面列出的深层链接。
 
 GitHub Pages 首次发布或更新可能需要数分钟。根目录中的 `.nojekyll` 会让 GitHub 原样发布 HTML/CSS。
 
-## 发布后需要验证的 URL
+## 发布后需要验证的 18 条页面路由
 
-当前正式地址：
+站点共有 18 条稳定页面路由：简体中文和 English 各 9 条。当前正式地址如下：
 
 | 用途 | 简体中文 | English |
 | --- | --- | --- |
@@ -84,11 +83,12 @@ GitHub Pages 首次发布或更新可能需要数分钟。根目录中的 `.noje
    - 付费墙中的隐私政策和用户协议必须继续可用。
 4. **App Store 正式下载按钮**
    - 官网已经使用“在 App Store 下载 / Download on the App Store”的正式发布文案；
-   - 当前仓库内没有已确认的 App Store 产品 URL。正式发布前，把两个首页共四处 `app-store-label` 替换为指向真实产品页的链接。
+   - 中国区 App Store 正式产品页：`https://apps.apple.com/cn/app/selfo/id6801035245`；
+   - 中英文首页的所有下载入口都应使用这一确认过的产品 URL。
 
-## 首次提交前的隐私设置
+## 仓库隐私设置
 
-公开 GitHub 仓库会暴露源文件与 Git 历史。首次提交前建议：
+公开 GitHub 仓库会暴露源文件与 Git 历史，建议持续保持：
 
 - 在 GitHub 开启 Keep my email addresses private；
 - 使用 GitHub 提供的 `noreply` 提交邮箱；
@@ -98,7 +98,7 @@ GitHub Pages 首次发布或更新可能需要数分钟。根目录中的 `.noje
 
 ## 正式发布前仍需人工确认
 
-- **经营主体状态与地址：**持续订阅是否要求市场主体登记、是否适用免登记情形，以及需要公开何种实际经营或送达地址，必须结合真实情况确认。当前没有提供可公开地址，页面未编造。中国大陆规则可能要求官网首页持续、显著公示真实名称与标记；当前首页仅按最小范围保留一行。
+- **经营主体状态与地址：**持续订阅是否要求市场主体登记、是否适用免登记情形，以及需要公开何种实际经营或送达地址，必须结合真实情况确认。当前没有提供可公开地址，页面未编造；法定主体信息仅在隐私政策和用户协议中做必要披露。
 - **App Store 个人账号展示：**个人 Apple Developer 账号的 Seller / Developer Name 可能直接显示法定姓名，官网无法改变；只有真实法律实体并将会员转换为组织后，才可能由实体名称承担展示。
 - **中国大陆跨境处理：**GitHub Pages 会记录访问 IP，Gmail 会处理支持邮件，Apple Maps / MapKit 在中国还可能涉及高德地图。政策披露本身不等于完成可能需要的单独同意、个人信息保护影响评估或其他程序。
 - **首次授权流程：**结合当前 App 的照片授权和地点展示时机，确认是否需要额外告知或单独同意。
@@ -116,10 +116,17 @@ GitHub Pages 首次发布或更新可能需要数分钟。根目录中的 `.noje
 
 ## 本地预览
 
-为了模拟 GitHub Pages 的仓库子路径，在本文件夹的父目录启动静态服务器，然后访问：
+本站是零构建静态站：不需要安装依赖，也不需要执行 build 或启动运行时服务。为了模拟 GitHub Pages 用户站点根路径，在本文件夹中启动 Python 静态服务器：
+
+```bash
+cd /Users/mac/Projects/selfo-legal-site
+python3 -m http.server 4173
+```
+
+然后访问：
 
 ```text
-http://127.0.0.1:4173/selfo-legal-site/
+http://127.0.0.1:4173/
 ```
 
 直接双击 HTML 也能浏览，但通过本地服务器预览更接近正式发布行为。

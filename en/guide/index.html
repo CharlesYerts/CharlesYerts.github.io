@@ -1,38 +1,65 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="The selfo App Guide: Photo Access, fixed review gestures, Pending Favorites and Pending Deletion, focused tools, media browsing, and selfo Pro.">
+    <meta name="application-name" content="selfo">
+    <meta name="theme-color" content="#151515">
+    <meta name="color-scheme" content="dark light">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
     <title>App Guide · selfo</title>
-    <link rel="icon" href="../../assets/selfo-icon.png">
-    <link rel="stylesheet" href="../../assets/styles.css">
-    <link rel="stylesheet" href="../../assets/modern.css">
+    <link rel="canonical" href="https://charlesyerts.github.io/en/guide/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://charlesyerts.github.io/guide/">
+    <link rel="alternate" hreflang="en" href="https://charlesyerts.github.io/en/guide/">
+    <link rel="alternate" hreflang="x-default" href="https://charlesyerts.github.io/guide/">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="/assets/site.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="selfo">
+    <meta property="og:title" content="App Guide · selfo">
+    <meta property="og:description" content="The selfo App Guide: Photo Access, fixed review gestures, Pending Favorites and Pending Deletion, focused tools, media browsing, and selfo Pro.">
+    <meta property="og:url" content="https://charlesyerts.github.io/en/guide/">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="zh_CN">
+    <meta property="og:image" content="https://charlesyerts.github.io/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="selfo official website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="App Guide · selfo">
+    <meta name="twitter:description" content="The selfo App Guide: Photo Access, fixed review gestures, Pending Favorites and Pending Deletion, focused tools, media browsing, and selfo Pro.">
+    <meta name="twitter:image" content="https://charlesyerts.github.io/assets/og.png">
   </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to content</a>
-    <header class="site-header"><div class="header-inner">
-      <a class="brand" href="../" aria-label="selfo official site home"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a>
-      <nav class="nav" aria-label="Main navigation"><a class="nav-product" href="../#features">Features</a><a href="../guide/" aria-current="page">Guide</a><a class="nav-secondary" href="../privacy/">Privacy</a><a class="nav-secondary" href="../support/">Support</a><a class="language-link" href="../../guide/" lang="zh-Hans">中</a></nav>
-    </div></header>
-
+  <body class="document-site route-guide">
+    <a class="skip-link" href="#content">Skip to the main content</a>
+    <header class="site-header">
+      <a class="brand-link" href="/en/" aria-label="selfo official site home"><span class="brand"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span></a>
+      <nav class="desktop-nav" aria-label="Main navigation"><a href="/en/#organizer">Organize</a><a href="/en/guide/" aria-current="page">App guide</a><a href="/en/privacy/">Privacy</a><a href="/en/support/">Support</a></nav>
+      <div class="header-actions"><a class="header-download" href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">Download<span aria-hidden="true">↗</span></a><div class="language-toggle" role="group" aria-label="Language / 语言"><a href="/guide/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a class="is-active" aria-current="page" href="/en/guide/" lang="en">EN</a></div></div>
+    </header>
     <main id="main">
-      <header class="document-hero guide-hero"><div class="shell">
+      <header class="document-hero guide-hero route-guide-hero"><div class="shell">
         <p class="eyebrow">Start with your first photo · selfo App Guide</p>
         <h1>Start using selfo,<br>one photo at a time.</h1>
-        <p class="document-summary">One fixed gesture system, two review queues, and every final action under your control. This guide reflects the current behavior of selfo 1.0.</p>
-        <div class="document-meta"><span>For selfo 1.0</span><span>Updated August 15, 2026</span></div>
-      </div></header>
+        <p class="document-summary">One fixed gesture system, two review queues, and every final action under your control. This guide reflects the current behavior of selfo 1.2.</p>
+        <div class="document-meta"><span>For selfo 1.2</span><span>Updated August 27, 2026</span></div>
+        <img class="document-hero__mascot" src="/assets/selfo-ip-photo-present.webp" width="1000" height="1000" alt="" fetchpriority="high">
+        </div></header>
 
       <div class="shell document-layout">
         <aside class="toc" aria-label="On this page"><span class="toc-title">On this page</span><a href="#access">Photo Access</a><a href="#areas">Four areas</a><a href="#gestures">Card gestures</a><a href="#confirmation">Final confirmation</a><a href="#tools">Focused tools</a><a href="#browsing">Browsing &amp; playback</a><a href="#pro">Allowance &amp; Pro</a><a href="#help">Get help</a></aside>
 
-        <article class="legal-content guide-content">
+        <article class="legal-content guide-content" id="content">
           <section id="access">
-            <p class="section-label">01 · Before you begin</p><h2>Enable Full Photo Access</h2>
-            <p>selfo needs to read the complete library, maintain the regular “selfo 收藏” album, and use system Photos capabilities for favorites or deletion after your final confirmation. A limited selection cannot support the complete organization flow reliably.</p>
+            <p class="section-label">01 · Before you begin</p><h2>Review the legal documents, then enable Full Photo Access</h2>
+            <p>On first launch, selfo shows the Privacy Policy and Terms of Use. selfo requests read-and-write Photos access only after you tap “Agree and Continue”; tapping “Not Now” does not request Photos access.</p>
+            <p>selfo needs to read the complete library, maintain the ordinary “selfo 收藏” album, and use system Photos capabilities for favorites or deletion after your final confirmation. A limited selection cannot support the complete organization flow reliably.</p>
             <div class="guide-path"><span>iOS Settings</span><b>→</b><span>selfo</span><b>→</b><span>Photos</span><b>→</b><strong>Full Access</strong></div>
             <div class="callout"><strong>You still control access</strong><p>You can decline or change access later in Settings. Without Full Access, selfo cannot provide complete library organization.</p></div>
           </section>
@@ -66,7 +93,7 @@
               <li><span>3</span><div><h3>Perform the final action</h3><p>Use the favorite or delete control only after checking your selection. Deletion still presents an iOS system confirmation.</p></div></li>
             </ol>
             <div class="guide-outcome-grid">
-              <article><span>☆</span><div><h3>After confirming a favorite</h3><p>The original joins the regular “selfo 收藏” album. It is not copied or moved, and the Apple Photos favorite heart is unchanged.</p></div></article>
+              <article><span>☆</span><div><h3>After confirming a favorite</h3><p>The original joins the ordinary “selfo 收藏” album. It is not copied or moved, and the Apple Photos favorite heart is unchanged.</p></div></article>
               <article><span>⌫</span><div><h3>After confirming deletion</h3><p>selfo requests deletion from the system. Content reaches Recently Deleted only after you approve the iOS prompt.</p></div></article>
             </div>
             <p class="fine-print">The left control withdraws, the center previews selected content, and the right performs the final action. Each Pending Favorite or Pending Deletion list holds up to 50 items at a time.</p>
@@ -81,7 +108,7 @@
               <article><strong>Color Themes</strong><p>Group photos by dominant color, then organize within a chosen group.</p></article>
               <article><strong>Large Files</strong><p>Filter by storage size, media type, and threshold before reviewing favorites or deletion.</p></article>
               <article><strong>Today's Additions</strong><p>Organize photos and videos added today with the same card gestures.</p></article>
-              <article><strong>selfo 收藏</strong><p>Browse the regular favorites album. Removing an item from it never deletes the original.</p></article>
+              <article><strong>selfo 收藏</strong><p>Browse this ordinary system album. Removing an item from it never deletes the original.</p></article>
               <article><strong>Library Insights</strong><p>Explore totals, composition, addition trends, library history, and total video duration.</p></article>
             </div>
             <div class="callout"><strong>Review queues live in different places</strong><p>Similar Photos, Color Themes, Today's Additions, and Large Files keep pending decisions inside each tool. Confirmed screenshot and screen-recording selections enter the main photo or video deletion queue.</p></div>
@@ -101,8 +128,8 @@
 
           <section id="pro">
             <p class="section-label">07 · Allowance &amp; subscription</p><h2>Start free, then upgrade if you need more</h2>
-            <p>The free plan includes organization for 20 photos and 10 videos. Pending favorite or delete decisions use the corresponding allowance; swiping left does not. The same asset is not counted twice when it appears through different entry points or when its decision changes.</p>
-            <div class="callout"><strong>selfo Pro</strong><p>Pro removes photo and video organization limits. Monthly, quarterly, six-month, and yearly periods unlock the same benefits; actual pricing and offers appear in the app and Apple’s purchase sheet.</p></div>
+            <p>The free plan includes organization for 20 photos and 10 videos each day. The allowance resets automatically at the start of each local calendar day. A pending favorite or delete decision reserves that day's corresponding allowance; withdrawing it before confirmation releases the allowance, and a successful favorite or deletion then counts as used for that day. Swiping left does not count, and the same asset is counted once across entry points or when switching between favorite and delete. An item added to a pending queue on a previous day can still be confirmed after the day changes and does not use the new day's allowance.</p>
+            <div class="callout"><strong>selfo Pro</strong><p>Pro removes the daily photo and video organization limits. Monthly, quarterly, six-month, and yearly periods unlock the same benefits; actual pricing and offers appear in the app and Apple’s purchase sheet.</p></div>
             <p><a href="../subscription/">Read the complete subscription explanation</a></p>
           </section>
 
@@ -114,7 +141,14 @@
         </article>
       </div>
     </main>
-
-    <footer class="site-footer product-footer compact-product-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><p>A local photo and video organizer made for iPhone.</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div><nav class="footer-column" aria-label="Product"><strong>Product</strong><a href="../#features">Features</a><a href="../guide/">App Guide</a><a href="../subscription/">selfo Pro</a></nav><nav class="footer-column" aria-label="Help"><strong>Help</strong><a href="../support/">Support &amp; FAQ</a><a href="mailto:yeertesi636@gmail.com">Contact Support</a></nav><nav class="footer-column" aria-label="Transparency and legal"><strong>Transparency &amp; Legal</strong><a href="../privacy/">Privacy Policy</a><a href="../terms/">Terms of Use</a><a href="../permissions/">Permissions</a><a href="../third-parties/">Third Parties</a><a href="../open-source/">Open Source</a></nav></div><div class="shell footer-bottom"><span>© 2026 selfo</span><span>This page reflects the current behavior of selfo 1.0</span><a href="../../guide/" lang="zh-Hans">简体中文</a></div></footer>
+    <footer class="site-footer">
+      <div class="site-footer__brand"><span class="brand brand--compact"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span><p>A local photo and video organizer made for iPhone.</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div>
+      <nav class="site-footer__nav" aria-label="Footer navigation">
+        <div><strong>Product</strong><a href="/en/#organizer">Organize</a><a href="/en/#features">Features</a><a href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">App Store</a></div>
+        <div><strong>Help</strong><a href="/en/guide/">App guide</a><a href="/en/support/">Support & FAQ</a></div>
+        <div><strong>Transparency & legal</strong><a href="/en/privacy/">Privacy Policy</a><a href="/en/terms/">Terms of Use</a><a href="/en/subscription/">Subscription</a></div>
+      </nav>
+      <div class="site-footer__bottom"><span>© 2026 selfo · Made for your library.</span><div class="language-toggle" role="group" aria-label="Language / 语言"><a href="/guide/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a class="is-active" aria-current="page" href="/en/guide/" lang="en">EN</a></div></div>
+    </footer>
   </body>
 </html>

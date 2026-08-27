@@ -1,30 +1,56 @@
-<!DOCTYPE html>
-<html lang="zh-Hans">
+<!doctype html>
+<html lang="zh-Hans-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="selfo App 使用指南：照片权限、固定整理手势、待收藏与待删除、快捷工具、媒体浏览及 selfo Pro。">
+    <meta name="application-name" content="selfo">
+    <meta name="theme-color" content="#151515">
+    <meta name="color-scheme" content="dark light">
     <meta name="referrer" content="strict-origin-when-cross-origin">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self'; img-src 'self' data:; object-src 'none'; base-uri 'none'; form-action 'none'">
     <title>App 使用指南 · selfo</title>
-    <link rel="icon" href="../assets/selfo-icon.png">
-    <link rel="stylesheet" href="../assets/styles.css">
-    <link rel="stylesheet" href="../assets/modern.css">
+    <link rel="canonical" href="https://charlesyerts.github.io/guide/">
+    <link rel="alternate" hreflang="zh-Hans" href="https://charlesyerts.github.io/guide/">
+    <link rel="alternate" hreflang="en" href="https://charlesyerts.github.io/en/guide/">
+    <link rel="alternate" hreflang="x-default" href="https://charlesyerts.github.io/guide/">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="/assets/favicon-32.png" sizes="32x32" type="image/png">
+    <link rel="icon" href="/assets/favicon-48.png" sizes="48x48" type="image/png">
+    <link rel="icon" href="/assets/icon-192.png" sizes="192x192" type="image/png">
+    <link rel="apple-touch-icon" href="/assets/apple-touch-icon.png" sizes="180x180">
+    <link rel="stylesheet" href="/assets/site.css">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="selfo">
+    <meta property="og:title" content="App 使用指南 · selfo">
+    <meta property="og:description" content="selfo App 使用指南：照片权限、固定整理手势、待收藏与待删除、快捷工具、媒体浏览及 selfo Pro。">
+    <meta property="og:url" content="https://charlesyerts.github.io/guide/">
+    <meta property="og:locale" content="zh_CN">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="og:image" content="https://charlesyerts.github.io/assets/og.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta property="og:image:alt" content="selfo 官方网站">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="App 使用指南 · selfo">
+    <meta name="twitter:description" content="selfo App 使用指南：照片权限、固定整理手势、待收藏与待删除、快捷工具、媒体浏览及 selfo Pro。">
+    <meta name="twitter:image" content="https://charlesyerts.github.io/assets/og.png">
   </head>
-  <body>
-    <a class="skip-link" href="#main">跳到主要内容</a>
-    <header class="site-header"><div class="header-inner">
-      <a class="brand" href="../" aria-label="selfo 官网首页"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a>
-      <nav class="nav" aria-label="主导航"><a class="nav-product" href="../#features">功能</a><a href="../guide/" aria-current="page">使用指南</a><a class="nav-secondary" href="../privacy/">隐私</a><a class="nav-secondary" href="../support/">支持</a><a class="language-link" href="../en/guide/" lang="en">EN</a></nav>
-    </div></header>
-
+  <body class="document-site route-guide">
+    <a class="skip-link" href="#content">跳到正文</a>
+    <header class="site-header">
+      <a class="brand-link" href="/" aria-label="selfo 官网首页"><span class="brand"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span></a>
+      <nav class="desktop-nav" aria-label="主导航"><a href="/#organizer">整理方式</a><a href="/guide/" aria-current="page">使用指南</a><a href="/privacy/">隐私</a><a href="/support/">支持</a></nav>
+      <div class="header-actions"><a class="header-download" href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">下载<span aria-hidden="true">↗</span></a><div class="language-toggle" role="group" aria-label="Language / 语言"><a class="is-active" aria-current="page" href="/guide/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a href="/en/guide/" lang="en">EN</a></div></div>
+    </header>
     <main id="main">
-      <header class="document-hero guide-hero"><div class="shell">
+      <header class="document-hero guide-hero route-guide-hero"><div class="shell">
         <p class="eyebrow">从第一张开始 · selfo App Guide</p>
         <h1>使用 selfo，<br>从第一张开始。</h1>
-        <p class="document-summary">一套固定手势，两个待确认列表，所有最终操作都由你完成。这份指南与 selfo 1.0 当前行为一致。</p>
-        <div class="document-meta"><span>适用于 selfo 1.0</span><span>更新日期：2026 年 8 月 15 日</span></div>
-      </div></header>
+        <p class="document-summary">一套固定手势，两个待确认列表，所有最终操作都由你完成。这份指南与 selfo 1.2 当前行为一致。</p>
+        <div class="document-meta"><span>适用于 selfo 1.2</span><span>更新日期：2026 年 8 月 27 日</span></div>
+        <img class="document-hero__mascot" src="/assets/selfo-ip-photo-present.webp" width="1000" height="1000" alt="" fetchpriority="high">
+        </div></header>
 
       <div class="shell document-layout">
         <aside class="toc" aria-label="页面目录">
@@ -32,10 +58,11 @@
           <a href="#access">照片访问</a><a href="#areas">四个入口</a><a href="#gestures">整理手势</a><a href="#confirmation">最终确认</a><a href="#tools">快捷工具</a><a href="#browsing">浏览与播放</a><a href="#pro">额度与 Pro</a><a href="#help">获得帮助</a>
         </aside>
 
-        <article class="legal-content guide-content">
+        <article class="legal-content guide-content" id="content">
           <section id="access">
             <p class="section-label">01 · 开始之前</p>
-            <h2>开启“完全访问”照片</h2>
+            <h2>先阅读法律文档，再开启“完全访问”照片</h2>
+            <p>首次启动时，selfo 会先展示《隐私政策》和《用户协议》。只有你点按“同意并继续”后，selfo 才会请求照片读写权限；点按“暂不”不会发起照片权限请求。</p>
             <p>selfo 需要读取完整图库、维护普通的“selfo 收藏”相册，并在你最终确认后通过系统照片能力执行收藏或删除。只允许访问部分照片时，完整整理流程无法可靠工作。</p>
             <div class="guide-path"><span>iOS 设置</span><b>→</b><span>selfo</span><b>→</b><span>照片</span><b>→</b><strong>完全访问</strong></div>
             <div class="callout"><strong>权限仍由你控制</strong><p>你可以拒绝或稍后在系统设置中更改权限。拒绝后，selfo 无法提供完整图库整理功能。</p></div>
@@ -111,8 +138,8 @@
           <section id="pro">
             <p class="section-label">07 · 额度与订阅</p>
             <h2>先免费开始，需要时再升级</h2>
-            <p>免费方案可整理 20 张照片和 10 个视频。加入待收藏或待删除会占用对应额度，左滑跳过不计；同一资源跨入口出现或在收藏、删除之间切换时不会重复计数。</p>
-            <div class="callout"><strong>selfo Pro</strong><p>Pro 解除照片与视频整理额度。月度、季度、半年和年度四种周期解锁相同权益；实际价格和优惠以 App 内与 Apple 购买确认页为准。</p></div>
+            <p>免费方案每天可整理 20 张照片和 10 个视频，额度按用户本地自然日每天自动重置。加入待收藏或待删除会预占当天对应额度；确认前撤回会释放，成功收藏或删除后才计为当天已使用。左滑跳过不计，同一资源跨入口出现或在收藏、删除之间切换时不会重复计数。前一日已加入待确认的内容跨日后仍可继续确认，且不会占用新一天的额度。</p>
+            <div class="callout"><strong>selfo Pro</strong><p>Pro 解除照片与视频的每日整理额度限制。月度、季度、半年和年度四种周期解锁相同权益；实际价格和优惠以 App 内与 Apple 购买确认页为准。</p></div>
             <p><a href="../subscription/">查看完整订阅说明</a></p>
           </section>
 
@@ -125,7 +152,14 @@
         </article>
       </div>
     </main>
-
-    <footer class="site-footer product-footer compact-product-footer"><div class="shell footer-main"><div class="footer-brand"><a class="brand" href="../"><span class="brand-mark" aria-hidden="true">s</span><span>selfo</span></a><p>为 iPhone 设计的本地照片与视频整理工具。</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div><nav class="footer-column" aria-label="产品"><strong>产品</strong><a href="../#features">功能</a><a href="../guide/">使用指南</a><a href="../subscription/">selfo Pro</a></nav><nav class="footer-column" aria-label="帮助"><strong>帮助</strong><a href="../support/">支持与 FAQ</a><a href="mailto:yeertesi636@gmail.com">联系支持</a></nav><nav class="footer-column" aria-label="透明度与法律"><strong>透明度与法律</strong><a href="../privacy/">隐私政策</a><a href="../terms/">用户协议</a><a href="../permissions/">权限清单</a><a href="../third-parties/">第三方服务</a><a href="../open-source/">开源许可</a></nav></div><div class="shell footer-bottom"><span>© 2026 selfo</span><span>本页面与 selfo 1.0 当前行为一致</span><a href="../en/guide/" lang="en">English</a></div></footer>
+    <footer class="site-footer">
+      <div class="site-footer__brand"><span class="brand brand--compact"><img class="brand__wordmark" src="/assets/selfo-wordmark.png" width="448" height="224" alt="selfo"></span><p>为 iPhone 设计的本地照片与视频整理工具。</p><a href="mailto:yeertesi636@gmail.com">yeertesi636@gmail.com</a></div>
+      <nav class="site-footer__nav" aria-label="页脚导航">
+        <div><strong>产品</strong><a href="/#organizer">整理方式</a><a href="/#features">功能</a><a href="https://apps.apple.com/cn/app/selfo/id6801035245" rel="external noopener">App Store</a></div>
+        <div><strong>帮助</strong><a href="/guide/">App 使用指南</a><a href="/support/">支持与常见问题</a></div>
+        <div><strong>透明度与法律</strong><a href="/privacy/">隐私政策</a><a href="/terms/">用户协议</a><a href="/subscription/">订阅说明</a></div>
+      </nav>
+      <div class="site-footer__bottom"><span>© 2026 selfo · 为你的图库而设计。</span><div class="language-toggle" role="group" aria-label="Language / 语言"><a class="is-active" aria-current="page" href="/guide/" lang="zh-Hans">中</a><span aria-hidden="true">/</span><a href="/en/guide/" lang="en">EN</a></div></div>
+    </footer>
   </body>
 </html>
